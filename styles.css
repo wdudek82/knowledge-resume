@@ -60,11 +60,20 @@ h1 {
 /* Right side */
 #timeline ul li:nth-child(odd) > div {
   left: 40px;
+  transform: translateX(1000px);
+
+}
+#timeline ul li.show:nth-child(odd) > div {
+  transform: translateX(0);
 }
 
 /* Left side */
 #timeline ul li:nth-child(even) > div {
   left: -434px;
+  transform: translateX(-1000px);
+}
+#timeline ul li.show:nth-child(even) > div {
+  transform: translateX(0);
 }
 
 /* Dots */
@@ -125,7 +134,7 @@ h1 {
   #timeline ul li div {
     width: calc(100vw - 150px);
   }
-  
+
   /* Left side */
   #timeline ul li:nth-child(even) > div {
     left: 40px;
